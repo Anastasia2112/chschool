@@ -54,40 +54,40 @@ const Way = () => {
                 tbody
                     tr.companies__tr
                         td.companies__td
-                            img(src="src/img/мтс.png", alt="МТС").companies__img
+                            img(src="src/img/мтс.png", alt="МТС")
                         td.companies__td
-                            img(src="src/img/мегафон.png", alt="Мегафон").companies__img
+                            img(src="src/img/мегафон.png", alt="Мегафон")
                         td.companies__td
-                            img(src="src/img/yota.png", alt="YOTA").companies__img
+                            img(src="src/img/yota.png", alt="YOTA")
                         td.companies__td
-                            img(src="src/img/теле2.png", alt="TELE2").companies__img
+                            img(src="src/img/теле2.png", alt="TELE2")
                     tr.companies__tr
                         td.companies__td 
-                            img(src="src/img/росбанк.png", alt="Росбанк").companies__img
+                            img(src="src/img/росбанк.png", alt="Росбанк")
                         td.companies__td
-                            img(src="src/img/яндекс.png", alt="Яндекс").companies__img
+                            img(src="src/img/яндекс.png", alt="Яндекс")
                         td.companies__td
-                            img(src="src/img/открытие.png", alt="Банк Открытие").companies__img
+                            img(src="src/img/открытие.png", alt="Банк Открытие")
                         td.companies__td
-                            img(src="src/img/альфа.png", alt="Альфа Банк").companies__img
+                            img(src="src/img/альфа.png", alt="Альфа Банк")
                     tr.companies__tr
                         td.companies__td 
-                            img(src="src/img/homecredit.png", alt="Home Credit Bank").companies__img
+                            img(src="src/img/homecredit.png", alt="Home Credit Bank")
                         td.companies__td
-                            img(src="src/img/бкс.png", alt="БКС").companies__img
+                            img(src="src/img/бкс.png", alt="БКС")
                         td.companies__td
-                            img(src="src/img/тинькофф.png", alt="Тинькофф Банк").companies__img
+                            img(src="src/img/тинькофф.png", alt="Тинькофф Банк")
                         td.companies__td
-                            img(src="src/img/raiffeisen.png", alt="Raiffeisen Bank").companies__img
+                            img(src="src/img/raiffeisen.png", alt="Raiffeisen Bank")
                     tr.companies__tr
                         td.companies__td 
-                            img(src="src/img/avito.png", alt="Avito").companies__img
+                            img(src="src/img/avito.png", alt="Avito")
                         td.companies__td
-                            img(src="src/img/пападжонс.png", alt="Папа Джонс").companies__img
+                            img(src="src/img/пападжонс.png", alt="Папа Джонс")
                         td.companies__td
-                            img(src="src/img/ikea.png", alt="IKEA").companies__img
+                            img(src="src/img/ikea.png", alt="IKEA")
                         td.companies__td
-                            img(src="src/img/leroymerlin.png", alt="Leroy Merlin").companies__img
+                            img(src="src/img/leroymerlin.png", alt="Leroy Merlin")
     `
     );
 }
