@@ -1,15 +1,18 @@
-@import url('https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css');
+// @import url('https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css');
 
 brand-color = #FF4D01
+project-bg-color = #242424
 
 *
   box-sizing border-box
   margin 0
 
+html
+  font-size 19px
+
 .wrapper
   padding 0 120px
-  font-family 'graphik'
-  font-size 19px
+  font-family 'Graphik LCG'
 
 a 
   text-decoration none !important
@@ -17,8 +20,16 @@ a
 .bg_color
   background-color #EFEFEF
 
-.navbar__margin
+.menu 
+  display none
+
+.navbar__container
+  display flex
+  justify-content flex-start
   margin 20px 0
+
+.navbar__row
+  width 25%
 
 .navbar__label
   text-transform uppercase
@@ -44,6 +55,9 @@ a
   color brand-color
   font-size 12px
 
+.navbar__menu
+  display none
+
 ul
   list-style-type none
   padding 0
@@ -60,9 +74,10 @@ ul
 .navbar__your_way
   color brand-color
 
-.navbar__your_way_wrapper
+.active_nav_item
   display flex
   align-items center
+  white-space nowrap
 
 .navbar__line
   width 160px
@@ -72,42 +87,54 @@ ul
 .poster
   padding-top 88px
   margin-bottom 100px
+  text-align center
 
 .heading1
   margin-bottom 122px
   text-align center
   color brand-color
-  font-weight 600
+  font-weight 500
   font-size 87px
 
-.how_work *
-  // border 1px solid blue
+.poster__img
+  max-width 100%
+
+.poster__sign_up
+  display none
 
 .heading2 
+  width 90%
+  margin-top 100px
   margin-bottom 34px
   font-size 60px
-  font-weight 600
+  font-weight 500
 
 .subtitle
-  font-weight 600
+  font-weight 500
   color brand-color
   text-transform uppercase
   margin-bottom 54px
 
 .how_work__cards 
+  display flex
+  justify-content flex-end
+  flex-wrap wrap
   margin-bottom 106px
 
 .how_work__card
   display flex
+  width 35%
 
-.how_work__card__circle 
+.how_work__card__circle
+  display flex
+  justify-content center
+  align-items center
   margin-right 40px
   width 50px
   height 50px
   border-radius 50%
   font-size 12px
   color #fff
-  text-align center
   line-height 50px
   background-color brand-color
 
@@ -116,7 +143,7 @@ ul
 
 .how_work__card__heading
   line-height 40px
-  font-weight 600
+  font-weight 500
 
 .your_way
   margin-bottom 190px
@@ -131,18 +158,29 @@ ul
   margin-top 40px
   margin-bottom 20px
 
-.your_way__odd
+.your_way__card
   display flex
 
+.your_way__card_wrapper
+  display flex
+  width 80%
+
+.your_way__even
+  display flex
+  justify-content space-between
+
 .mr40
-    margin-right 40px
+  margin-right 40px
 
 .your_way__number
   color brand-color
   font-weight 600
 
+.your_way__img
+  margin-right 60px
+
 .your_way__card_heading
-  font-weight 600
+  font-weight 500
   text-transform uppercase
   margin-bottom 20px
 
@@ -152,9 +190,14 @@ ul
 .companies
   margin-bottom 175px
 
+.center_heading
+  display flex
+  justify-content center
+
 .heading3
+  width 50%
   font-size 36px
-  font-weight 600
+  font-weight 500
   margin-bottom 63px
 
 .companies__table
@@ -174,11 +217,18 @@ ul
 .cases
   margin-bottom 183px
 
-.mb120
-  margin-bottom 120px
+.cases_heading
+  width 52%
+  margin 0 auto 120px
 
 .cases__card
-  height 600px
+  display flex
+  min-height 600px
+
+.cases__card_wrapper
+  display flex
+  flex-direction column
+  justify-content space-between
 
 .cases__card_info
   display flex
@@ -191,19 +241,19 @@ ul
   margin-bottom 25px
 
 .cases__card_heading
-  font-weight 600
+  font-weight 500
   margin-bottom 20px
 
 .arrow
   cursor pointer
 
-.mr90
+.left_arrow
   margin-right 90px
 
 .cases__card_project
   display flex
   justify-content center
-  background-color #242424
+  background-color project-bg-color
   padding 40px 40px 40px 40px
 
 .cases__card_project_img
@@ -222,7 +272,12 @@ ul
   font-size 18px
   margin-bottom 120px
 
+.consult__form
+  width 50%
+  margin 0 auto
+
 .consult_heading
+  width 100%
   margin-bottom 36px
 
 .consult__form_p
@@ -273,26 +328,27 @@ ul
   color brand-color
 
 .foot
-  padding-top 30px
-  padding-bottom 30px
+  display flex
+  justify-content space-between
+  min-height 190px
+  padding-top 25px
+  padding-bottom 25px
   background-color brand-color
-  height 190px
-  color #fff
 
-.foot__height
-  height 100%
-
-.foot__vertical_flex
+.foot__left_col
+  width 50%
   display flex
   flex-direction column
   justify-content space-between
 
+.foot__right_col
+  width 50%
+  display flex
+  justify-content space-between
+
 .foot__name
   font-weight 600
-
-.foot__info *
-  display block
-  font-size 16px
+  color #fff
 
 .white_link a
   color #fff
@@ -301,12 +357,235 @@ ul
 .white_link a:hover
   color #fff
 
-.uppercase
+.info_text
   text-transform uppercase
-
-.fs12
   font-size 12px
+  font-weight 500
+
+.foot__contacts
+  display flex
+  flex-direction column
+  justify-content space-between
+
+.foot__contacts span
+  display block
+  font-weight 400
+  color #fff
 
 .foot__links
   display flex
   justify-content space-between
+
+.foot__links span:not(:last-child)
+  margin-right 15px
+
+@media (min-width: 801px)
+  body
+    overflow auto !important
+  .menu
+    display none !important
+
+@media (max-width: 800px)
+  html
+    font-size 21px
+
+  .wrapper
+    padding 0 15px
+    font-family 'Graphik LCG'
+
+  .navbar__container
+    justify-content space-between
+    align-items center
+    margin 35px 0
+
+  .navbar__sign_up
+    display none
+
+  .navbar__line
+    display none
+
+  .nav_list
+    display none
+
+  .navbar__menu
+    display block 
+    float right 
+    color brand-color
+    font-weight 500
+    cursor pointer
+
+  .poster
+    padding-top 43px
+    margin-bottom 90px
+
+  .heading1
+    font-size 52px
+
+  .poster__sign_up_wrapper
+    display flex
+    justify-content flex-end
+
+  .poster__sign_up
+    display block
+    margin-top 90px
+
+  .heading2 
+    width 100%
+    margin-bottom 28px
+    font-size 42px
+    font-weight 500
+
+  .subtitle
+    width 80%
+    margin-bottom 37px
+
+  .how_work__cards 
+    justify-content flex-start
+    flex-wrap wrap
+    margin-bottom 0
+
+  .how_work__card
+    flex-wrap wrap
+    width 100%
+    margin-bottom 36px
+
+  .how_work__card__circle 
+    width 45px
+    height 45px
+    margin-bottom 10px
+
+  .how_work__card__content
+    width 100%
+
+  .your_way
+    margin-bottom 75px
+
+  .your_way__card
+    flex-direction column
+
+  .your_way__card_wrapper
+    flex-direction column
+    align-items center
+    justify-content center
+    width 100%
+
+  .your_way__img
+    margin auto
+    margin-bottom 20px
+
+  .your_way__last_line
+    display none
+
+  .center_heading
+    display flex
+    justify-content flex-start
+
+  .companies
+    margin-bottom 83px
+
+  .heading3
+    font-size 42px
+    width 80%
+    margin-bottom 38px
+
+  .companies__td
+    display block
+    width 100%
+
+  .companies__img
+    margin-top (td_width - height/2) px
+
+
+  .cases_heading
+    width 100%
+    margin-bottom 37px
+    .heading3
+      width 100%
+
+  .cases__card
+    flex-direction column-reverse
+    min-height 400px
+
+  .cases__card_wrapper
+    align-items center
+
+  .cases__card_project
+    width 100%
+    height 240px
+    margin-bottom 45px
+    padding 15px
+
+  .cases__card_project_img
+    width 150px
+    height 150px
+
+  .cases__card_info
+    flex-direction row
+    justify-content space-between
+    font-size 12px
+    margin-bottom 40px
+
+  .cases__photo
+    width 90px
+    height 90px
+    margin 0 30px 25px 0
+
+  .consult__form
+    width 100%
+
+  .consult__form_footer
+    flex-direction row-reverse
+
+  .consult
+    margin-bottom 30px
+
+  .foot
+    display none
+
+  .menu
+    display none // скрыть меню
+    position absolute
+    top 0
+    width 100%
+    height 100%
+    overflow auto
+    background-color brand-color
+    color #fff
+  
+  .menu__back
+    font-weight 500
+    cursor pointer
+
+  .menu__list
+    margin-bottom 90px
+
+  .menu__item
+    display flex
+    align-items center
+    height 75px
+    padding 0 30px
+    border-bottom 1px solid #fff
+
+  .menu__item_text
+    font-size 42px
+    font-weight 500
+
+  .menu__info
+    display flex
+    flex-direction column
+    justify-content space-between
+    margin-bottom 43px
+    padding 0 45px
+
+  .menu__contact_wrapper
+    width 70%
+    margin-bottom 90px
+
+  .menu__contact_wrapper *
+    display block
+
+  .menu__contact_wrapper >:not(:last-child)
+    margin-bottom 30px
+
+  .menu__contacts *:not(:last-child)
+    margin-bottom 15px

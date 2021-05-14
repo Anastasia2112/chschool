@@ -4,217 +4,246 @@ head
     title CHSCH
 body.bg_color
     main
-        nav.wrapper.navbar__margin
-            div.row
-                div.col-sm.orange_link
-                    a(href='#').navbar__label Chsch
-                div.col-sm.orange_link
-                    a(href='#').display_block.sign_up Записаться
-                div.col-sm
-                    ul
-                        li
-                            span.black_link
-                                a(href='#').navbar__about.fs16 О центре
-                        li.orange_link
-                            a(href='#').navbar__your_way.fs16
-                                div.navbar__your_way_wrapper
-                                    div.navbar__line
-                                    span Ваш путь
-                        li
-                            span.black_link
-                                a(href='#').navbar__cases.fs16 Кейсы
-                        li
-                            span.black_link
-                                a(href='#').navbar__consultation.fs16 Консультация
-                div.col-sm
+        //- section.wrapper.menu 
+        //-     div.navbar__container
+        //-         div.white_link
+        //-             a(href='/').navbar__label Chsch
+        //-         div
+        //-             span.menu__back Назад
+        //-     ul.menu__list
+        //-             li.menu__item
+        //-                 span.white_link.menu__item_text
+        //-                     a(href='#how_work') О центре
+        //-             li.menu__item
+        //-                 span.white_link.menu__item_text
+        //-                     a(href='#how_work') Ваш путь
+        //-             li.menu__item
+        //-                 span.white_link.menu__item_text
+        //-                     a(href='#cases') Кейсы
+        //-             li.menu__item
+        //-                 span.white_link.menu__item_text
+        //-                     a(href='#consult') Консультация
+        //-     div.menu__info
+        //-         span.info_text
+        //-                 span Студия Олега Чулакова
+        //-         div.menu__contacts.white_link
+        //-             div
+        //-                 a(href="tel: +74952680661").info_text +7 495 268 0661
+        //-             div
+        //-                 a(href="mailto: school@chulakov.ru").info_text school@chulakov.ru
+        //-             div
+        //-                 |Ростов-на-Дону, 344010 
+        //-                 br 
+        //-                 |Кировский пр-т, д. 122, 3-й эт.
+        //-         span.white_link.info_text
+        //-                 a(href="#") Правовая информация
 
-        section.wrapper.poster 
-            h1.heading1 Career Center
-            img(src="src/img/Group3473.png", alt="Poster")
+        //- nav.wrapper.navbar__container
+        //-     div.navbar__row.orange_link
+        //-         a(href='/').navbar__label Chsch
+        //-     div.navbar__row.navbar__sign_up.orange_link
+        //-         a(href='#').display_block.sign_up Записаться
+        //-     div.navbar__row
+        //-         div.orange_link
+        //-             span.navbar__menu Меню
+        //-         ul.nav_list
+        //-             li
+        //-                 span.black_link
+        //-                     a(href='#how_work').navbar__about.fs16 О центре
+        //-             li.orange_link
+        //-                 a(href='#your_way').navbar__your_way.fs16
+        //-                     div.navbar__your_way_wrapper
+        //-                         div.navbar__line
+        //-                         span Ваш путь
+        //-             li
+        //-                 span.black_link
+        //-                     a(href='#cases').navbar__cases.fs16 Кейсы
+        //-             li
+        //-                 span.black_link
+        //-                     a(href='#consult').navbar__consultation.fs16 Консультация
 
-        section.wrapper.how_work
-            div.row
-                div.col-8.heading2 Как работает центр карьеры выпускников?
-            p.subtitle Наша цель &mdash; профит студента
-            div.row.how_work__cards
-                div.col
-                div.col.how_work__card
-                    div.how_work__card__circle A
-                    div.how_work__card__content
-                        p.how_work__card__heading HR-лекции
-                        p.how_work__card__text Специалисты центра научат правильно оформлять резюме, проходить собеседование, упаковывать свои кейсы и развивать карьеру.
-                div.col.how_work__card
-                    div.how_work__card__circle B
-                    div.how_work__card__content
-                        p.how_work__card__heading Акселератор
-                        p.how_work__card__text Интегрированный центр обучения в офисе Студии Олега Чулакова &mdash; это два месяца бесплатного обучения по трем направлениям.
-            div.row.how_work__cards
-                div.col
-                div.col.how_work__card
-                    div.how_work__card__circle C
-                    div.how_work__card__content
-                        p.how_work__card__heading HR-отделы
-                        p.how_work__card__text Мы сотрудничаем с топовыми продуктовыми компаниями и агенствами, которым регулярно рекомендуем наших выпускников.
-                div.col.how_work__card
-                    div.how_work__card__circle D
-                    div.how_work__card__content
-                        p.how_work__card__heading Фриланс
-                        p.how_work__card__text Обучаем правильно организовать удаленную работу и поиска партнеров для регулярного сотрудничества.
-        section.wrapper.your_way
-            div.row
-                h2.col-10.heading2 Ваш путь от начала обучения до трудоустройства
-            p.subtitle.mb110 Пять шагов развития карьеры
-            div.your_way__line
-            div.row
-                div.col-3.your_way__odd 
-                    p.your_way__number.mr40 1
-                    img(src="src/img/обучение.png", alt="Обучение")
-                div.col-6
-                    p.your_way__card_heading Обучение
-                    p Процесс, который должен быть регулярным в жизни специалиста. В школе можно найти программы по самым востребованным направлениям.
-            div.your_way__line
-            div.row
-                div.col-3
-                    p.your_way__number 2
-                div.col-3
-                    img(src="src/img/практика.png", alt="Практика")
-                div.col-6
-                    p.your_way__card_heading Практика
-                    p Специалист без опыта мало востребован. Любой курс школы &mdash; это 70% практики. Наша команда сфокусирована на получаемых навыках выпускников.
-            div.your_way__line
-            div.row
-                div.col-3.your_way__odd 
-                    p.your_way__number.mr40 3
-                    img(src="src/img/кейсы.png", alt="Кейсы")
-                div.col-6
-                    p.your_way__card_heading Кейсы
-                    p Портфолио и опыт &mdash; ключевое, что нужно работодателю для принятия решений. Все выпускники школы выходят с кейсами от крупных, международных брендов.
-            div.your_way__line
-            div.row
-                div.col-3
-                    p.your_way__number 4
-                div.col-3
-                    img(src="src/img/собеседование.png", alt="Собеседование").your_way__interview
-                div.col-6
-                    p.your_way__card_heading Собеседование
-                    p Поиск лучших предложений и упаковка себя, как специалиста  &mdash; важный этап, в котором наши специалисты помогут каждому выпускнику.
-            div.your_way__line
-            div.row
-                div.col-3.your_way__odd 
-                    p.your_way__number 5
-                    img(src="src/img/работа.png", alt="Работа")
-                div.col-6
-                    p.your_way__card_heading Работа
-                    p Поздравляем, вы действующий специалист. Ваше трудоустройство &mdash; это только начало пути. Мы подскажем, как развивать свою карьеру.
-            div.your_way__line
+        //- section.wrapper.poster 
+        //-     h1.heading1 Career Center
+        //-     img(src="src/img/Group3473.png", alt="Poster").poster__img
+        //-     div.orange_link.poster__sign_up_wrapper
+        //-             a(href='#').display_block.sign_up.poster__sign_up Записаться
 
-        section.wrapper.companies
-            div.row
-                div.col-3
-                h3.col-6.heading3 Наши выпускники работают в ведущих компаниях
-            table.companies__table
-                tr.companies__tr 
-                    td.companies__td 
-                        img(src="src/img/мтс.png", alt="МТС")
-                    td.companies__td
-                        img(src="src/img/мегафон.png", alt="Мегафон")
-                    td.companies__td
-                        img(src="src/img/yota.png", alt="YOTA")
-                    td.companies__td
-                        img(src="src/img/теле2.png", alt="TELE2")
-                tr.companies__tr  
-                    td.companies__td 
-                        img(src="src/img/росбанк.png", alt="Росбанк")
-                    td.companies__td
-                        img(src="src/img/яндекс.png", alt="Яндекс")
-                    td.companies__td
-                        img(src="src/img/открытие.png", alt="Банк Открытие")
-                    td.companies__td
-                        img(src="src/img/альфа.png", alt="Альфа Банк")
-                tr.companies__tr  
-                    td.companies__td 
-                        img(src="src/img/homecredit.png", alt="Home Credit Bank")
-                    td.companies__td
-                        img(src="src/img/бкс.png", alt="БКС")
-                    td.companies__td
-                        img(src="src/img/тинькофф.png", alt="Тинькофф Банк")
-                    td.companies__td
-                        img(src="src/img/raiffeisen.png", alt="Raiffeisen Bank")
-                tr.companies__tr  
-                    td.companies__td 
-                        img(src="src/img/avito.png", alt="Avito")
-                    td.companies__td
-                        img(src="src/img/пападжонс.png", alt="Папа Джонс")
-                    td.companies__td
-                        img(src="src/img/ikea.png", alt="IKEA")
-                    td.companies__td
-                        img(src="src/img/leroymerlin.png", alt="Leroy Merlin")
+        //- section#how_work.wrapper.how_work
+        //-     div.heading2 Как работает центр карьеры выпускников?
+        //-     p.subtitle Наша цель &mdash; профит студента
+        //-     div.how_work__cards
+        //-         div.how_work__card
+        //-             div.how_work__card__circle A
+        //-             div.how_work__card__content
+        //-                 p.how_work__card__heading HR-лекции
+        //-                 p.how_work__card__text Специалисты центра научат правильно оформлять резюме, проходить собеседование, упаковывать свои кейсы и развивать карьеру.
+        //-         div.how_work__card
+        //-             div.how_work__card__circle B
+        //-             div.how_work__card__content
+        //-                 p.how_work__card__heading Акселератор
+        //-                 p.how_work__card__text Интегрированный центр обучения в офисе Студии Олега Чулакова &mdash; это два месяца бесплатного обучения по трем направлениям.
+        //-     div.how_work__cards
+        //-         div.how_work__card
+        //-             div.how_work__card__circle C
+        //-             div.how_work__card__content
+        //-                 p.how_work__card__heading HR-отделы
+        //-                 p.how_work__card__text Мы сотрудничаем с топовыми продуктовыми компаниями и агенствами, которым регулярно рекомендуем наших выпускников.
+        //-         div.how_work__card
+        //-             div.how_work__card__circle D
+        //-             div.how_work__card__content
+        //-                 p.how_work__card__heading Фриланс
+        //-                 p.how_work__card__text Обучаем правильно организовать удаленную работу и поиска партнеров для регулярного сотрудничества.
         
-        section.wrapper.cases
-            div.row
-                div.col-3
-                h2.col-6.heading2 Кейсы Студентов
-            div.row
-                div.col-3
-                p.col-6.subtitle.mb120 В этом разделе отображаем студентов и их выпускные работы
-            div.row.cases__card
-                div.col-3.cases__card_info
-                    div
-                        img(src="src/img/boy.png", alt="Фото").cases__photo
-                        p.cases__card_heading Виталий Митрофанов
-                        p Итоговая работа выпускника курса Interface Design и что то еще например о его проекте, где сейчас работает безоблачный карьерный рост.
-                    div
-                        img(src="src/img/влево.png", alt="Влево").arrow.mr90
-                        img(src="src/img/вправо.png", alt="Вправо").arrow
-                div.col-9.cases__card_project
-                    img(src="src/img/003.png", alt="Проект").cases__card_project_img.cases__card_project_img1
-                    img(src="src/img/002.png", alt="Проект").cases__card_project_img.cases__card_project_img2
+        //- section#your_way.wrapper.your_way
+        //-     h2.heading2 Ваш путь от начала обучения до трудоустройства
+        //-     p.subtitle.mb110 Пять шагов развития карьеры
+        //-     div.your_way__line
+        //-     div.your_way__card
+        //-         span.your_way__number.mr40 1
+        //-         div.your_way__card_wrapper
+        //-             img(src="src/img/обучение.png", alt="Обучение").your_way__img
+        //-             div
+        //-                 p.your_way__card_heading Обучение
+        //-                 p Процесс, который должен быть регулярным в жизни специалиста. В школе можно найти программы по самым востребованным направлениям.
+        //-     div.your_way__line
+        //-     div.your_way__card.your_way__even
+        //-         span.your_way__number 2
+        //-         div.your_way__card_wrapper
+        //-             img(src="src/img/практика.png", alt="Практика").your_way__img
+        //-             div
+        //-                 p.your_way__card_heading Практика
+        //-                 p Специалист без опыта мало востребован. Любой курс школы &mdash; это 70% практики. Наша команда сфокусирована на получаемых навыках выпускников.
+        //-     div.your_way__line
+        //-     div.your_way__card
+        //-         span.your_way__number.mr40 3
+        //-         div.your_way__card_wrapper
+        //-             img(src="src/img/кейсы.png", alt="Кейсы").your_way__img
+        //-             div
+        //-                 p.your_way__card_heading Кейсы
+        //-                 p Портфолио и опыт &mdash; ключевое, что нужно работодателю для принятия решений. Все выпускники школы выходят с кейсами от крупных, международных брендов.
+        //-     div.your_way__line
+        //-     div.your_way__card.your_way__even
+        //-         span.your_way__number 4
+        //-         div.your_way__card_wrapper
+        //-             img(src="src/img/собеседование.png", alt="Собеседование").your_way__img.your_way__interview
+        //-             div
+        //-                 p.your_way__card_heading Собеседование
+        //-                 p Поиск лучших предложений и упаковка себя, как специалиста  &mdash; важный этап, в котором наши специалисты помогут каждому выпускнику.
+        //-     div.your_way__line
+        //-     div.your_way__card
+        //-         span.your_way__number 5
+        //-         div.your_way__card_wrapper
+        //-             img(src="src/img/работа.png", alt="Работа").your_way__img
+        //-             div
+        //-                 p.your_way__card_heading Работа
+        //-                 p Поздравляем, вы действующий специалист. Ваше трудоустройство &mdash; это только начало пути. Мы подскажем, как развивать свою карьеру.
+        //-     div.your_way__line.your_way__last_line
+
+        //- section.wrapper.companies
+        //-     div.center_heading
+        //-         h3.heading3 Наши выпускники работают в ведущих компаниях
+        //-     table.companies__table
+        //-         tr.companies__tr 
+        //-             td.companies__td 
+        //-                 img(src="src/img/мтс.png", alt="МТС")
+        //-             td.companies__td
+        //-                 img(src="src/img/мегафон.png", alt="Мегафон")
+        //-             td.companies__td
+        //-                 img(src="src/img/yota.png", alt="YOTA")
+        //-             td.companies__td
+        //-                 img(src="src/img/теле2.png", alt="TELE2")
+        //-         tr.companies__tr  
+        //-             td.companies__td 
+        //-                 img(src="src/img/росбанк.png", alt="Росбанк")
+        //-             td.companies__td
+        //-                 img(src="src/img/яндекс.png", alt="Яндекс")
+        //-             td.companies__td
+        //-                 img(src="src/img/открытие.png", alt="Банк Открытие")
+        //-             td.companies__td
+        //-                 img(src="src/img/альфа.png", alt="Альфа Банк")
+        //-         tr.companies__tr  
+        //-             td.companies__td 
+        //-                 img(src="src/img/homecredit.png", alt="Home Credit Bank")
+        //-             td.companies__td
+        //-                 img(src="src/img/бкс.png", alt="БКС")
+        //-             td.companies__td
+        //-                 img(src="src/img/тинькофф.png", alt="Тинькофф Банк")
+        //-             td.companies__td
+        //-                 img(src="src/img/raiffeisen.png", alt="Raiffeisen Bank")
+        //-         tr.companies__tr  
+        //-             td.companies__td 
+        //-                 img(src="src/img/avito.png", alt="Avito")
+        //-             td.companies__td
+        //-                 img(src="src/img/пападжонс.png", alt="Папа Джонс")
+        //-             td.companies__td
+        //-                 img(src="src/img/ikea.png", alt="IKEA")
+        //-             td.companies__td
+        //-                 img(src="src/img/leroymerlin.png", alt="Leroy Merlin")
         
-        section.wrapper.consult
-            div.row
-                div.col-3
-                div.col-6.consult__form 
-                    form(action="#") 
-                        h3.heading3.consult_heading Бесплатная консультация
-                        p.consult__form_p  Специалист центра развития карьеры с радостью ответит на вопросы и составит вашу личную траекторию развития.
-                        div.consult__form_wrapper
-                            label.consult__form_label Имя
-                            input(type="text").consult__form_input
-                        div.consult__form_wrapper
-                            label.consult__form_label Телефон
-                            input(type="text").consult__form_input
-                        div.consult__form_wrapper
-                            label.consult__form_label Имя
-                            input(type="email").consult__form_input
-                        div.consult__form_footer
-                            input(type="submit" value="Записаться").sign_up
-                            p.consult__form_footer_p.orange_link
-                                | Нажимая на кнопку, вы даете
-                                br
-                                a.consent согласие 
-                                | на обработку персональных данных и соглашаетесь с политикой конфиденциальности.
-    footer.wrapper.foot
-        div.row.foot__height
-            div.col-3.foot__vertical_flex
-                span.foot__name Chulakov School
-                span.white_link.uppercase.fs12
-                    a(href="#") Правовая информация
-            div.col-3
-            div.col-3.foot__info.foot__vertical_flex
-                div.white_link.foot__info_contacts
-                    a(href="tel: +74952680661") +7 495 268 0661
-                    a(href="mailto: school@chulakov.ru") school@chulakov.ru
-                div.address 
-                    |Ростов-на-Дону, 344010 
-                    br 
-                    |Кировский пр-т, д. 122, 3-й эт.
-            div.col-3.foot__links
-                span.white_link.uppercase.fs12
-                    a(href="#") Facebook
-                span.white_link.uppercase.fs12
-                    a(href="#") Вконтакте
-                span.white_link.uppercase.fs12
-                    a(href="#") Instagram
+        //- section#cases.wrapper.cases
+        //-     div.cases_heading
+        //-         h2.heading2 Кейсы Студентов
+        //-         p.subtitle 
+        //-             |В этом разделе отображаем студентов
+        //-             br 
+        //-             |и их выпускные работы
+        //-     div.cases__card
+        //-         div.cases__card_wrapper
+        //-             div.cases__card_info
+        //-                 img(src="src/img/boy.png", alt="Фото").cases__photo
+        //-                 div
+        //-                     p.cases__card_heading Виталий Митрофанов
+        //-                     p Итоговая работа выпускника курса Interface Design и что то еще например о его проекте, где сейчас работает безоблачный карьерный рост.
+        //-             div.cases__card_arrows
+        //-                 img(src="src/img/влево.png", alt="Влево").arrow.left_arrow
+        //-                 img(src="src/img/вправо.png", alt="Вправо").arrow
+        //-         div.cases__card_project
+        //-             img(src="src/img/003.png", alt="Проект").cases__card_project_img.cases__card_project_img1
+        //-             img(src="src/img/002.png", alt="Проект").cases__card_project_img.cases__card_project_img2
+        
+        //- section#consult.wrapper.consult
+        //-     div.consult__form 
+        //-         h3.heading3.consult_heading Бесплатная консультация
+        //-         form(action="#") 
+        //-             p.consult__form_p  Специалист центра развития карьеры с радостью ответит на вопросы и составит вашу личную траекторию развития.
+        //-             div.consult__form_wrapper
+        //-                 label.consult__form_label Имя
+        //-                 input(type="text").consult__form_input
+        //-             div.consult__form_wrapper
+        //-                 label.consult__form_label Телефон
+        //-                 input(type="text").consult__form_input
+        //-             div.consult__form_wrapper
+        //-                 label.consult__form_label E-mail
+        //-                 input(type="email").consult__form_input
+        //-             div.consult__form_footer
+        //-                 input(type="submit" value="Записаться").sign_up
+        //-                 p.consult__form_footer_p.orange_link
+        //-                     | Нажимая на кнопку, вы даете
+        //-                     br
+        //-                     a.consent согласие 
+        //-                     | на обработку персональных данных и соглашаетесь с политикой конфиденциальности.
 
+        //- footer.wrapper.foot
+        //-     div.row.foot__height
+        //-         div.col-3.foot__vertical_flex
+        //-             span.foot__name Chulakov School
+        //-             span.white_link.info_text
+        //-                 a(href="#") Правовая информация
+        //-         div.col-3
+        //-         div.col-3.foot__info.foot__vertical_flex
+        //-             div.white_link.foot__info_contacts
+        //-                 a(href="tel: +74952680661") +7 495 268 0661
+        //-                 a(href="mailto: school@chulakov.ru") school@chulakov.ru
+        //-             div.address 
+        //-                 |Ростов-на-Дону, 344010 
+        //-                 br 
+        //-                 |Кировский пр-т, д. 122, 3-й эт.
+        //-         div.col-3.foot__links
+        //-             span.white_link.info_text
+        //-                 a(href="#") Facebook
+        //-             span.white_link.info_text
+        //-                 a(href="#") Вконтакте
+        //-             span.white_link.info_text
+        //-                 a(href="#") Instagram
 
-        //- div#root
+        #root
